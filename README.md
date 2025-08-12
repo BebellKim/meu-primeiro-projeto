@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Plano de Recuperação
 
-First, run the development server:
+## Objetivo do Teste
+Garantir que o projeto hospedado no GitHub possa ser recuperado de forma completa, funcional e sem perda de dados, em caso de falhas ou perda dos arquivos locais.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Ambiente de Teste
+- **Sistema Operacional:** Windows 11
+- **Ferramentas Utilizadas:**
+  - Git 
+  - GitHub
+  - Visual Studio Code
+  - Terminal
+  - Navegador 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Etapas de Backup
+1. git init
+2. git add .
+3. git commit -m "novo projeto"
+4. colar link github
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Simulação de Falha
+Excluir completamente a pasta do projeto no computador local.
 
-## Learn More
+Opcional: simular falha de disco ou remoção acidental de arquivos importantes.
 
-To learn more about Next.js, take a look at the following resources:
+## Procedimento de Recuperação
+Git clone 
+Cd nome da pasta
+Npm install
+Npx next dev
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Critérios de Aceitação
+Nenhum erro deve ocorrer durante a execução.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Todas as funcionalidades originais devem estar operacionais.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+O tempo total de recuperação < 10 minutos.
